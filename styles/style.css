@@ -1,0 +1,518 @@
+/* DROPDOWN IN SKILLS */
+.dropdown-checkbox-menu {    
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 8px 12px;
+}
+
+.dropdown-checkbox-menu .form-check {
+    margin-bottom: 4px;
+}
+
+.dropdown-toggle-btn {
+    text-align: left;
+    width: 100%;
+}
+
+/* INDEX */
+
+/* ── BASE ── */
+.portfolio-body {
+    background-color: #001830;
+    color: #faf6ec;
+    font-family: 'Crimson Pro', serif;
+   
+}
+
+/* ── NAVBAR ── */
+.portfolio-nav {
+    background: rgba(0, 16, 33, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(188, 169, 120, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 12px 0;
+}
+
+.portfolio-nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #faf6ec;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.portfolio-nav-brand:hover {
+    color: #d4bc8a;
+}
+
+.portfolio-nav-link {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #faf6ec;
+    padding: 6px 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.portfolio-nav-link:hover {
+    color: #d4bc8a;
+}
+
+/* ── VINTAGE DIVIDERS ── */
+.vintage-divider {
+    text-align: center;
+    color: #bca978;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    margin: 0;
+    opacity: 0.6;
+}
+
+.section-rule {
+    border: none;
+    border-top: 1px solid rgba(188, 169, 120, 0.2);
+    margin: 0;
+}
+
+/* ── SECTION TITLES ── */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #faf6ec;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.25rem;
+}
+
+.section-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #faf6ec;
+    margin-bottom: 0.5rem;
+}
+
+/* ── GLASS CARD ── */
+.glass-card {
+    background: rgba(0, 24, 48, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(188, 169, 120, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(188, 169, 120, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.glass-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(188, 169, 120, 0.13);
+}
+
+/* ── HERO ── */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 0 60px;
+    position: relative;
+}
+
+.hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 900;
+    color: #faf6ec;
+    line-height: 1.1;
+    margin-bottom: 0.25rem;
+}
+
+.hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #faf6ec;
+    margin-bottom: 1.5rem;
+}
+
+.hero-bio {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #faf6ec;
+    max-width: 520px;
+    margin-bottom: 2rem;
+}
+
+/* PIXEL ART FRAME */
+.pixel-frame {
+    display: inline-block;
+    image-rendering: pixelated;
+}
+
+.pixel-frame img {
+    display: block;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    image-rendering: pixelated;
+    border: 4px solid #bca978;
+    box-shadow: 0 0 0 4px #001830, 0 0 0 8px #bca978;
+}
+
+/* SOCIAL LINKS */
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    color: #faf6ec;
+    text-decoration: none;
+    border: 1px solid rgba(188, 169, 120, 0.25);
+    border-radius: 4px;
+    padding: 6px 14px;
+    transition: all 0.2s;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.social-link:hover {
+    color: #d4bc8a;
+    border-color: #bca978;
+    background: rgba(188, 169, 120, 0.08);
+}
+
+/* ── SKILLS ── */
+#skills {
+    padding: 80px 0;
+}
+
+.category-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #faf6ec;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(188, 169, 120, 0.2);
+}
+
+.skill-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0, 16, 48, 0.4);
+    border: 1px solid rgba(188, 169, 120, 0.2);
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: #faf6ec;
+    margin: 4px 4px 4px 0;
+    transition: all 0.2s;
+}
+
+.skill-pill:hover {
+    background: rgba(0, 24, 64, 0.6);
+    color: #faf6ec;
+    border-color: #bca978;
+}
+
+.skill-pill img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    background: rgba(233, 231, 225, 0.341);
+    padding: 2px;
+    border-radius: 3px;
+}
+
+/* ── PROJECTS ── */
+#projects {
+    padding: 80px 0;
+}
+
+.project-card {
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    display: block;
+    filter: sepia(20%) brightness(0.85);
+    transition: filter 0.3s;
+}
+
+.project-card:hover .project-img {
+    filter: sepia(0%) brightness(1);
+}
+
+.project-img-placeholder {
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(135deg, #001021, #242b42);
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    color: #bca978;
+    opacity: 0.6;
+}
+
+.project-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #faf6ec;
+    margin-bottom: 6px;
+}
+
+.project-desc {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1rem;
+    color: #faf6ec;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.project-date {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    color: #bca978;
+    opacity: 0.9;
+}
+
+.project-link {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    color: #faf6ec;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(188, 169, 120, 0.25);
+    transition: border-color 0.2s, color 0.2s;
+    margin-right: 12px;
+}
+
+.project-link:hover {
+    color: #d4bc8a;
+    border-color: #bca978;
+}
+
+/* ── EDUCATION ── */
+#education {
+    padding: 80px 0;
+}
+
+.edu-card {
+    position: relative;
+    padding-left: 24px;
+}
+
+.edu-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: -32px;
+    width: 1px;
+    background: linear-gradient(to bottom, #bca978, transparent);
+}
+
+.edu-card:last-child::before {
+    display: none;
+}
+
+.edu-dot {
+    position: absolute;
+    left: -5px;
+    top: 6px;
+    width: 11px;
+    height: 11px;
+    background: #bca978;
+    border: 2px solid #001830;
+    box-shadow: 0 0 0 2px #bca978;
+}
+
+.edu-years {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    color: #bca978;
+    margin-bottom: 4px;
+}
+
+.edu-school {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #faf6ec;
+    margin-bottom: 2px;
+}
+
+.edu-degree {
+    font-family: 'Crimson Pro', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: #faf6ec;
+    margin-bottom: 6px;
+}
+
+.edu-achievement {
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    color: #faf6ec;
+    border: 1px solid rgba(188, 169, 120, 0.25);
+    border-radius: 3px;
+    padding: 2px 8px;
+    margin: 2px 4px 2px 0;
+    background: rgba(188, 169, 120, 0.06);
+}
+
+/* ── CERTIFICATIONS ── */
+#certifications {
+    padding: 80px 0;
+}
+
+.cert-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid rgba(188, 169, 120, 0.2);
+    flex-shrink: 0;
+}
+
+.cert-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #faf6ec;
+    margin-bottom: 2px;
+}
+
+.cert-org {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+    color: #faf6ec;
+}
+
+.cert-date {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    color: #faf6ec;
+}
+
+.cert-desc {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1rem;
+    color: #faf6ec;
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+/* ── CONTACT ── */
+#contact {
+    padding: 80px 0 100px;
+}
+
+.contact-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #faf6ec;
+    line-height: 1.1;
+}
+
+/* ── FOOTER ── */
+.portfolio-footer {
+    border-top: 1px solid rgba(188, 169, 120, 0.2);
+    padding: 24px 0;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    color: #faf6ec;
+}
+
+/* ── SCROLL ANIMATIONS ── */
+.fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Admin side text colors */
+body {
+    background-color: #001830;
+    color: #f5f5ff;
+}
+
+h1 {
+    color: #001830;
+}
+
+h2 {
+    color: #f5f5ff;
+}
+
+.table {
+    color: #f5f5ff;
+}
+
+.table thead {
+    background-color: #001021;
+    color: #f5f5ff;
+}
+
+.form-label {
+    color: #001021;
+}
+
+.text-muted {
+    color: #788694 !important;
+}
+
+.lead {
+    color: #535960;
+}
+
+.card {
+    background-color: #f9f9ff;
+    border-radius: 15px;
+    border: #4b4b70 1px solid;
+    box-shadow: #000b16 0px 10px 20px -10px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
