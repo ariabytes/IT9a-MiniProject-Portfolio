@@ -128,7 +128,7 @@ A dynamic, database-driven portfolio website built with PHP and MySQL. Features 
 - `password_hash()` and `password_verify()` for secure passwords
 - `real_escape_string()` for input sanitization
 - JavaScript IntersectionObserver for scroll animations
-- Bootstrap 5 glassmorphism UI with custom CSS
+- Bootstrap 5 with custom CSS
 
 ---
 
