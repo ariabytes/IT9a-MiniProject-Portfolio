@@ -1,9 +1,9 @@
 <?php
-// session_start();
-// if (!isset($_SESSION['admin_id'])) {
-//     header("Location: login.php");
-//     exit();
-// }
+session_start();
+if (!isset($_SESSION['admin_id'])) {
+    header("Location: login.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +31,7 @@
                         <a href="projects.php" class="btn btn-outline-dark">Projects</a>
                         <a href="certifications.php" class="btn btn-outline-warning">Certifications</a>
                         <a href="school_history.php" class="btn btn-outline-secondary">School History</a>
-                        <a href="login.php" class="btn btn-outline-danger">Logout</a>
+                        <a href="logout.php" class="btn btn-outline-danger">Logout</a>
                     </div>
                 </div>
             </div>
